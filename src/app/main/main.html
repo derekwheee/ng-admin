@@ -1,0 +1,16 @@
+<div class="page-header">
+    <h1>Dashboard <small>Subtext for header</small></h1>
+</div>
+
+<div class="row">
+    <div class="col-sm-6 col-md-4" ng-repeat="dashboardPanel in dashboardPanels | orderBy:'rank'">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">{{dashboardPanel.title}}</h3>
+            </div>
+            <ul class="nav panel-body" ng-repeat="url in dashboardPanel.urls">
+                <li><a href="{{url.url}}">{{url.title}}</a>
+            </ul>
+        </div>
+    </div>
+</div>

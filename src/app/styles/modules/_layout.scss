@@ -1,0 +1,45 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    padding-top: 50px;
+}
+
+body > .container {
+    width: auto !important;
+    max-width: 1600px !important;
+    height: 100%;
+    padding: 0;
+
+    > .row {
+        height: 100%;
+        margin: 0;
+    }
+}
+
+.#{$namespace}-main {
+    position: relative;
+    height: 100%;
+    padding: 0 2em 2em;
+    background: #f7f7f7;
+    z-index: 1;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 100%;
+        width: 33.3333%;
+        background-color: #3a3633;
+    }
+}
+
+.#{$namespace}-sidebar {
+    position: relative;
+    padding: 0;
+    z-index: 2;
+}
