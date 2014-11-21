@@ -23,8 +23,8 @@ body > .container {
 .#{$namespace}-main {
     position: relative;
     height: 100%;
-    padding: 0 2em 2em;
-    background: #f7f7f7;
+    padding: 2em;
+    background: #fafafa;
     z-index: 1;
 
     &:before {
@@ -35,6 +35,14 @@ body > .container {
         right: 100%;
         width: 33.3333%;
         background-color: #3a3633;
+    }
+
+    .page-header {
+        margin-top: -2em;
+    }
+
+    .#{$namespace}-alerts + .page-header {
+        margin-top: 0;
     }
 }
 

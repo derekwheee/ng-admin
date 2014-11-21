@@ -4,7 +4,7 @@
     .nav {
         li a {
             display: block;
-            padding: 1em 2em;
+            padding: 1em;
             color: #C0BBB7;
 
             &:hover {
@@ -12,7 +12,7 @@
             }
 
             i {
-                width: 2em;
+                width: 1.75em;
             }
         }
 
@@ -24,7 +24,7 @@
             background: rgba(69, 69, 69, 0.6);
 
             a {
-                padding-left: 5em;
+                padding-left: 4em;
             }
         }
     }
